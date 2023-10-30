@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Personagem</title>
+    <link rel="stylesheet" href="charpage.css">
+</head>
+<body>
+    <header id="header-container">
+            <h1 id="header-text">Detalhes do Personagem</h1>   
+    </header>
+    <main id="character-main-container">
+      <div id="character-details-container">
+        <img id="character-image" src="" alt="">
+        <div id="buttons-container">
+          <button id="left-button"><abbr tittle="Prev character"></abbr><img src="assets/left-removebg-preview.png" alt="Prev Character"></button>
+          <h2 id="character-name"></h2>
+          <button id="right-button"><abbr title="Next character"></abbr><img src="assets/right-removebg-preview.png" alt="Next Character"></button>
+        </div>  
+        <p class="char-information" id="character-species"></p>
+        <p class="char-information" id="character-gender"></p>
+        <p class="char-information" id="character-status"></p>
+        <p class="char-information" id="character-location"></p>
+      </div> 
+      <div id="episodes-main-container">
+        <h3>Lista de episódios:</h3>
+        <div id="episodes-container">
+          <ul id="character-episodes">
+            <!-- Aqui vão ser inseridos os EPs dos personagens retornados da API -->
+          </ul>
+        </div> 
+    </main>
+
+    <script src="char.js"></script>
+
+</body>
+</html>

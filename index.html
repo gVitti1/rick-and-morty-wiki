@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="shortcut icon" href="assets/logo-min.svg" type="image/x-icon">
+  
+  <title>Rick and Morty</title>
+</head>
+<body>
+  <div class="container">
+    <main>
+      <section class="chars">
+        <img src="assets/logo.svg" alt="Logo Rick Aand Morty">
+        
+        <div class="filters">
+          <input type="text" id="name" placeholder="Filter by name..." class="filter">
+          <select name="species" id="species" class="filter">
+            <option value="" default>
+              Species
+            </option>
+            <option value="Animal">Animal</option>
+            <option value="Alien">Alien</option>
+            <option value="Disease">Doença</option>
+            <option value="unknown">Desconhecido</option>
+            <option value="Human">Humano</option>
+            <option value="Humanoid">Humanoide</option>
+            <option value="Mythological Creature">Mitologico</option>
+            <option value="Poopybutthole">Poopybutthole</option>
+            <option value="Robot">Robo</option>
+          </select>
+          <select name="gender" id="gender" class="filter">
+            <option value="">
+              Genero
+            </option>
+            <option value="female">Feminino</option>
+            <option value="male">Masculino</option>
+            <option value="genderless">Sem Genero</option>
+            <option value="unknown">Desconhecido</option>
+          </select>
+          <select name="status" id="status" class="filter">
+            <option value="">
+              Status
+            </option>
+            <option value="alive">Vivo</option>
+            <option value="dead">Morto</option>
+            <option value="unknown">Desconhecido</option>
+          </select>
+        </div>
+
+        <div class="chars-container">    
+           <!-- Aqui serão inseridos os personagens retornados da API -->
+        </div>
+
+        <button id="load-more">
+          Carregar mais
+        </button>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+/* Importa a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Reset e configuração geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilização de tags específicas */
+img {
+  margin-top: 0.125em;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Estilização do corpo do documento */
+body {
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 1.25em;
+  background-image: url(assets/atmosphere-sky-astronomy-black-star-get-snowing-png-pictures-4125a3294e4f5e5026495e1d3823eb52.png);
+}
+
+/* Estilização do cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25em 0;
+}
+
+header > ul {
+  display: flex;
+  list-style: none;
+  gap: 1.25em;
+}
+
+header > ul > li {
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+/* Estilização do contêiner principal */
+.container {
+  max-width: 71.5em;
+  margin: 0 auto;
+  padding: 0 1.25em;
+}
+
+/* Estilização do conteúdo principal */
+main {
+  width: 100%;
+  margin-top: 0.625em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .chars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .chars .filters {
+  margin-top: 1.25em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 15em);
+  gap: 1.25em;
+}
+
+.chars .filters .filter {
+  padding: 0.625em 1.25em;
+  background: transparent;
+  border: 1px solid;
+  border-radius: 0.3125em;
+  background-color: #f2f2f2;
+}
+
+main .chars .chars-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 15em);
+  gap: 1.25em;
+  margin-top: 1.25em;
+  padding-top: 1em;
+}
+
+.chars .chars-container .char {
+  border-radius: 1.4em;
+  overflow: hidden;
+  background-color: rgb(13, 193, 238);
+  color: #fff;
+  box-shadow: 0 0 0.3125em rgba(0, 0, 0, 0.4);
+}
+
+.chars .chars-container .char > img {
+  width: 15em;
+  height: 10.5em;
+  object-fit: cover;
+}
+
+.chars-container .char .char-info {
+  padding: 0.625em;
+}
+
+.char .char-info span {
+  display: block;
+  font-size: 0.875em;
+  margin-top: 0.3125em;
+}
+
+main button {
+  display: block;
+  margin: 1.25em auto;
+  padding: 0.625em 1.25em;
+  border: none;
+  border-radius: 0.3125em;
+  background: #fff;
+  color: #000;
+  font-size: 1em;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.char {
+  transition: transform 0.2s;
+}
+
+.char:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-character-infos {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 480px) {
+  main .chars .filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .chars .filters .filter {
+    width: 80%; /* Reduz a largura dos filtros */
+    text-align: center; /* Alinha o texto dos filtros ao centro */
+  }
+
+  .chars .filters .filter::placeholder {
+    text-align: center; /* Alinha o placeholder ao centro */
+
+    
+  }
+
+  @media only screen and (max-width: 768px) {
+    main .chars .chars-container {
+      grid-template-columns: repeat(3, 1fr); /* Ajusta para mostrar 3 personagens por linha */
+    }
+  }
+  
+}
+
+
+
+
+
+
