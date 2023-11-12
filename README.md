@@ -1,4 +1,3 @@
-# rick-and-morty-wiki
 # Rick and Morty Wiki
 
 Este projeto é um teste desenvolvido em JavaScript, consistindo em um website que oferece acesso aos personagens e episódios do universo de Rick and Morty.
