@@ -1,0 +1,50 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url(assets/atmosphere-sky-astronomy-black-star-get-snowing-png-pictures-4125a3294e4f5e5026495e1d3823eb52.png);
+  margin: 0;
+  padding: 0;
+}
+
+h1, p {
+  text-align: center;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#main-container h2 {
+  color: rgb(13, 193, 238);
+  letter-spacing: .5px;
+}
+
+#episode-characters-container {
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  color: #000;
+  margin-bottom: 2em;
+  width: 90%;
+  text-align: left;
+  border: 1px solid #000;
+  border-radius: 1em;
+  max-width: 37.5em;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.charLink {
+  color: #000;
+  text-decoration: none;
+}
+
+.charLink:hover {
+  color: rgb(9, 133, 164);
+}

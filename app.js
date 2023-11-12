@@ -36,7 +36,7 @@ async function renderCharacter(character) {
         charElement.innerHTML = `  
         <img src="${character.image}" alt="${character.name}">
             <h3 class="card-title">${character.name}</h3>      
-            <div class="card-character-infos">
+            <div class="card-character-infos">  
                 <span>${character.species}</span>
                 <span>${character.gender}</span>
                 <span>${character.status}</span>

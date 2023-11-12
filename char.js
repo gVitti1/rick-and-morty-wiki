@@ -19,34 +19,47 @@ document.addEventListener('DOMContentLoaded', () => {
   // Função para obter os detalhes de um personagem específico
   async function getCharacterDetails(characterId) {
     try {
-      //Acessa o endpoint específico do personagem do ID capturado na URL, tendo assim acesso aos seus dados.
       const response = await fetch(`${url}/character/${characterId}`);
       const character = await response.json();
-
-      //Insere os dados específicos do personagem nos elementos HTML.
+  
       characterImage.src = character.image;
       characterName.textContent = character.name;
       characterSpecies.textContent = `Espécie: ${character.species}`;
       characterGender.textContent = `Gênero: ${character.gender}`;
       characterStatus.textContent = `Status: ${character.status}`;
       characterLocation.textContent = `Location: ${character.location.name}`;
-
-      //Declaração de um Array que será preenchido com os episódios em que o personagem aparece
-      const episodeTitles = [];
-
-      //Estrutura for que acessa cada Url de episódio retornado no json do personagem e aplica o método fetch
-      //Assim, tendo acesso aos dados específicos do episódio
+  
+      const episodeLinks = [];
+  
       for (const episodeUrl of character.episode) {
         const episodeResponse = await fetch(episodeUrl);
         const episodeData = await episodeResponse.json();
-        episodeTitles.push(episodeData.name);
+  
+        const episodeLink = document.createElement('a');
+        episodeLink.classList.add('epLink'); 
+        episodeLink.title = `Ver personagens de: ${episodeData.name}`;
+        episodeLink.href = `episodePage.html?id=${episodeData.id}`;
+        episodeLink.textContent = episodeData.name;
+        episodeLink.target = '_blank';
+  
+        episodeLinks.push(episodeLink);
       }
+      
+      characterEpisodes.innerHTML = '';
+  
+      episodeLinks.forEach((episodeLink, index) => {
+        characterEpisodes.appendChild(episodeLink);
+  
+        if (index < episodeLinks.length - 1) {
+          characterEpisodes.appendChild(document.createTextNode(' | '));
+        }
+      });
 
-      characterEpisodes.innerText = episodeTitles.join('  |  ');
     } catch (error) {
       console.error('Erro ao buscar detalhes do personagem:', error);
     }
   }
+  
 
   // Função para obter o ID máximo do personagem
   async function getMaxCharacterId() {

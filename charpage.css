@@ -24,15 +24,6 @@ body {
   margin-left: 3em;
 }
 
-/* Estilo da lista */
-ul {
-  border: 1px solid #000;
-  border-radius: 1em;
-  max-width: 37.5em;
-  margin: 0 auto;
-  padding: 1em;
-}
-
 /* Estilo do contêiner principal */
 #character-main-container {
   display: flex;
@@ -84,6 +75,11 @@ ul {
   margin-bottom: 2em;
   width: 36em;
   text-align: left;
+  border: 1px solid #000;
+  border-radius: 1em;
+  max-width: 37.5em;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 /* Estilo do contêiner dos botões */
@@ -107,6 +103,15 @@ ul {
 #episodes-main-container {
   color: #fff;
   text-align: center;
+}
+
+.epLink{
+  color: #000;
+  text-decoration: none;
+}
+
+.epLink:hover{
+  color: rgb(9, 133, 164);
 }
 
 #episodes-main-container h3 {
