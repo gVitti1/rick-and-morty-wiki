@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const episodeLink = document.createElement('a');
         episodeLink.classList.add('epLink'); 
         episodeLink.title = `Ver personagens de: ${episodeData.name}`;
-        episodeLink.href = `episodePage.html?id=${episodeData.id}`;
+        episodeLink.href = `../Pages/episodePage.html?id=${episodeData.id}`;
         episodeLink.textContent = episodeData.name;
         episodeLink.target = '_blank';
   

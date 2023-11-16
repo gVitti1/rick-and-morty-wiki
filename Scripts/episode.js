@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       const characterLink = document.createElement('a');
       characterLink.classList.add('charLink');  
       characterLink.title = `Detalhes: ${characterData.name}`;
-      characterLink.href = `character.html?id=${characterData.id}`;
+      characterLink.href = `../Pages/character.html?id=${characterData.id}`;
       characterLink.textContent = characterData.name;
       characterLink.target = '_blank';
       characterLinks.push(characterLink);

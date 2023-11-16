@@ -45,7 +45,7 @@ async function renderCharacter(character) {
 
         // Adiciona um evento de clique para redirecionar para a página de detalhes, insere o ID na url
         charElement.addEventListener('click', () => {
-            window.location.href = `character.html?id=${character.id}`;
+            window.location.href = `Pages/character.html?id=${character.id}`;
         });
 
         // Adiciona o card do personagem ao contêiner principal
