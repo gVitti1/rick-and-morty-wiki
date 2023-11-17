@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       characterLink.title = `Detalhes: ${characterData.name}`;
       characterLink.href = `../Pages/character.html?id=${characterData.id}`;
       characterLink.textContent = characterData.name;
-      characterLink.target = '_blank';
       characterLinks.push(characterLink);
     }
 

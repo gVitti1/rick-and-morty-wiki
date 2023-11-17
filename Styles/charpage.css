@@ -1,128 +1,117 @@
-/* Reset e configuração geral */
 body {
   font-family: 'Roboto', sans-serif;
-  background-image: url(../assets/atmosphere-sky-astronomy-black-star-get-snowing-png-pictures-4125a3294e4f5e5026495e1d3823eb52.png);
   margin: 0;
   padding: 0;
+  background-image: url(../assets/atmosphere-sky-astronomy-black-star-get-snowing-png-pictures-4125a3294e4f5e5026495e1d3823eb52.png);
 }
 
-/* Estilo do cabeçalho */
-#header-container{
-  padding-top: 2;
-  padding-bottom: 2em;
-  display: flex;
-}
-
-#header-container button{
-  color: #000(13, 193, 238);
-  font-weight: bold;
-  letter-spacing: 1px;
-  border: 1px solid #fff;
-  border-radius: 20px;
-  margin-top: 20%;
-  padding: 0.5em 1em .5em 1em;
-  margin-left: 3em;
-}
-
-/* Estilo do contêiner principal */
-#character-main-container {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-/* Estilo do contêiner de detalhes do personagem */
-#character-details-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2em;
-  border-radius: 1em;
-  color: #fff;
-  border: 2px solid #fff;
-  backdrop-filter: blur(4px);
-  padding-top: 1em;
-  width: 26em;
-}
-
-/* Estilo da imagem do personagem */
-#character-image {
-  width: 12.5em;
-  height: 12.5em;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: .5em;
-}
-
-/* Estilo do nome do personagem */
-#character-name {
-  color:  rgb(13, 193, 238);
-}
-
-/* Estilo das informações do personagem */
-.char-information {
-  font-size: large;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-/* Estilo da lista de episódios */
-#character-episodes {
-  letter-spacing: 1px;
-  line-height: 1.5em;
-  font-weight: bold;
-  background-color: #f2f2f2;
-  color: #000;
-  margin-bottom: 2em;
-  width: 36em;
-  text-align: left;
-  border: 1px solid #000;
-  border-radius: 1em;
-  max-width: 37.5em;
-  margin: 0 auto;
-  padding: 1em;
-}
-
-/* Estilo do contêiner dos botões */
-#buttons-container {
-  display: flex;
-  gap: 4em;
-}
-
-#buttons-container img {
-  width: 2em;
-  height: 2em;
-  background-color: #fff;
-}
-
-#buttons-container button {
-  background: none;
-  border: none;
-}
-
-/* Estilo do contêiner de episódios */
-#episodes-main-container {
-  color: #fff;
+#header-container {
+  background-color: #333;
+  padding: 10px;
   text-align: center;
 }
 
-.epLink{
+#header-container button {
+  background-color: #fff;
+  color: #333;
+  padding: 8px 16px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#character-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#character-details-container {
+  text-align: center;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#character-image {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#left-button,
+#right-button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 8px 12px; 
+  font-size: 14px; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#left-button:hover,
+#right-button:hover {
+  background-color: #0056b3;
+}
+
+#left-button img,
+#right-button img {
+  max-width: 24px;
+  margin-right: 8px; 
+}
+
+.char-information {
+  margin: 15px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+#episodes-main-container {
+  max-width: 600px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+#episodes-container {
+  margin-top: 20px;
+}
+
+#character-episodes {
+  list-style-type: none;
+  letter-spacing: 1px;
+  padding: 0;
+  margin: 0;
+}
+
+.epLink {
   color: #000;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-.epLink:hover{
+.epLink:hover {
   color: rgb(9, 133, 164);
+  transition: color 0.3s ease;
 }
 
-#episodes-main-container h3 {
-  backdrop-filter: blur(10px);
-}
 
-/* Muda a direção dos elementos na tela dependendo da resolução */
-@media only screen and (max-width: 1212px) {
-  #character-main-container { 
-    display: flex;                
-    flex-direction: column;
-    align-items: center;
-  }
+#character-name {
+  font-size: 20px; 
+  margin-top: 10px; 
 }

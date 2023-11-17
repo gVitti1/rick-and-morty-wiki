@@ -5,6 +5,22 @@ body {
   padding: 0;
 }
 
+#header-container {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+#header-container button {
+  background-color: #fff;
+  color: #333;
+  padding: 8px 16px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 h1, p {
   text-align: center;
   color: #fff;
@@ -28,7 +44,7 @@ h1, p {
   letter-spacing: 1px;
   line-height: 1.5em;
   font-weight: bold;
-  background-color: #f2f2f2;
+  background-color: #ffff;
   color: #000;
   margin-bottom: 2em;
   width: 90%;
@@ -47,4 +63,5 @@ h1, p {
 
 .charLink:hover {
   color: rgb(9, 133, 164);
+  transition: color 0.3s ease;
 }

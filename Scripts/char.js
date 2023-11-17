@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
         episodeLink.title = `Ver personagens de: ${episodeData.name}`;
         episodeLink.href = `../Pages/episodePage.html?id=${episodeData.id}`;
         episodeLink.textContent = episodeData.name;
-        episodeLink.target = '_blank';
   
         episodeLinks.push(episodeLink);
       }
